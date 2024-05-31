@@ -10,7 +10,8 @@ import os
 from datetime import datetime
 from xlrd import xldate_as_tuple
 
-excel_path = os.path.join(os.getcwd(), 'data.xlsx')
+filename="data.xlsx"
+excel_path = os.path.join(os.getcwd()+'/data/', filename)
 print('Excel文件的路径：' + excel_path)
 excel_file = xlrd.open_workbook(excel_path)
 table = excel_file.sheets()[0]
